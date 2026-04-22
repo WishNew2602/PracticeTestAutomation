@@ -1,0 +1,40 @@
+Behavioural Driven developement
+
+cucumber is an BDD tool( Gherkin Language)
+
+We use Cucumber tool to write Feature files( Tests Sets)
+
+Feature file contains Scenarios and Scenario outline
+
+KeyWords in Cucumber
+
+Feature - is used define entire feature
+Scenario: Is used to define a Test case
+Scenario Outline - is used to define Test case with Multiple sets of Test Data
+Examples: Is used along with Scenario Outline to provide the test data
+
+Given: Used to define a pre requisite
+And: 
+When : Action we perform and steps we take
+Then : We used to validate 
+And: is used to define another same step like Given, When Then.
+
+Test data usage in Feature Files 
+Step - When I enter valid username "student" and password 2789
+Step Defination :
+    When('I enter valid username {string} and password {float}', function (username, password) {
+    loginPage.enterUsername(username);
+    loginPage.enterPassword(password);
+});
+
+Potention Iterview Question:
+
+1; What is BDD
+2, What is Cucumber
+3, What is the diff between BDD And cucumber
+4, Explain about Scenario
+5, Explain About Scenario Outline
+6, Exlapin Examples
+7, What is BackGround ketword
+8, Cucucmber hooks before and after
+9, Write step and step def

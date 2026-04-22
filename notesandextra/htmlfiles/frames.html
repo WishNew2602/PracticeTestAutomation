@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Basic Nested Frames Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<frameset rows="25%,50%,25%" frameborder="1" border="2">
+  <frame src="header.html" name="header" scrolling="no" noresize>
+  <frameset cols="20%,*,20%" frameborder="1" border="1">
+    <frame src="left.html" name="left" scrolling="yes" marginwidth="5" marginheight="5">
+    <frame src="main.html" name="main" scrolling="yes" marginwidth="5" marginheight="5">
+
+    <frame src="right.html" name="right" scrolling="yes" marginwidth="5" marginheight="5">
+  </frameset>
+  
+  <frame src="footer.html" name="footer" scrolling="no" noresize>
+</frameset>
+<noframes>
+  <p>Your browser does not support frames. Please use a modern browser.</p>
+</noframes>
+</html>

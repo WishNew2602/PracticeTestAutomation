@@ -1,0 +1,244 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\playwright.config.ts",
+    "rootDir": "C:/Users/ADMIN/WorkSpaceVS/PracticeTestAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/ADMIN/WorkSpaceVS/PracticeTestAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/ADMIN/WorkSpaceVS/PracticeTestAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "csvparamstesting.spec.ts",
+      "file": "csvparamstesting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "login test for different value",
+          "file": "csvparamstesting.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login test for student and Password123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7227,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "this login is valid\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T03:55:10.005Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-03496-for-student-and-Password123-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-03496-for-student-and-Password123-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3fe2de018d8f614c028c-00639b99528f74e531f3",
+              "file": "csvparamstesting.spec.ts",
+              "line": 14,
+              "column": 17
+            },
+            {
+              "title": "Login test for incorrectUser and Password123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6450,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "this login is invalid username\n"
+                        },
+                        {
+                          "text": "Error message for invalid username: Your username is invalid!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T03:55:10.007Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-efb02-correctUser-and-Password123-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-efb02-correctUser-and-Password123-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3fe2de018d8f614c028c-0dc2339028407b5e24fc",
+              "file": "csvparamstesting.spec.ts",
+              "line": 14,
+              "column": 17
+            },
+            {
+              "title": "Login test for student and incorrectPassword",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7146,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "this login is invalid password\n"
+                        },
+                        {
+                          "text": "Error message for invalid password: Your password is invalid!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T03:55:09.987Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-39551-udent-and-incorrectPassword-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\ADMIN\\WorkSpaceVS\\PracticeTestAutomation\\test-results\\csvparamstesting-login-tes-39551-udent-and-incorrectPassword-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3fe2de018d8f614c028c-0152818db93002f46071",
+              "file": "csvparamstesting.spec.ts",
+              "line": 14,
+              "column": 17
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-10T03:55:06.771Z",
+    "duration": 11640.845,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

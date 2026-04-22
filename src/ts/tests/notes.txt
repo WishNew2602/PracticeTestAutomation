@@ -1,0 +1,21 @@
+//cover SOC and DRY
+
+SOC - Seperation of Concerns
+DRY - Don't Reapeat yourself
+
+in POM
+
+-----pages (conatins pages of AUT)
+-----tests
+-----utils - helper functions
+-----testData
+-----reports
+
+we will have separate class for each page
+tests are seperated
+separate class for utils
+separate class/ files for testData
+
+
+//playwright config
+//debugging in editer

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bottom Section - Nested Frame</title>
+<style>
+  body {
+    margin: 0;
+    padding: 15px;
+    background-color: #f0e8f8;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    border: 2px solid #9933cc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  h3 {
+    color: #9933cc;
+    margin-top: 0;
+  }
+  button {
+    background-color: #9933cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+  }
+  button:hover {
+    background-color: #7722aa;
+  }
+  select {
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h3>Nested Frame: Bottom Section</h3>
+    <p>This is the BOTTOM NESTED FRAME inside the main frame.</p>
+    
+    <label for="bottomselect">Select an option:</label><br>
+    <select id="bottomselect">
+      <option value="">-- Choose --</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    
+    <br><br>
+    <button id="bottombutton" onclick="alert('Bottom Section Button Clicked!')">Click Bottom Button</button>
+    <button id="bottombutton2" onclick="document.getElementById('result').style.display='block'">Show Result</button>
+    
+    <p id="result" style="color: #9933cc; font-weight: bold; display: none;">Bottom section result is now visible!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="11.640844999999999">
+<testsuite name="csvparamstesting.spec.ts" timestamp="2026-04-10T03:55:06.817Z" hostname="chromium" tests="3" failures="0" skipped="0" time="20.823" errors="0">
+<testcase name="login test for different value › Login test for student and Password123" classname="csvparamstesting.spec.ts" time="7.227">
+<system-out>
+<![CDATA[this login is valid
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-03496-for-student-and-Password123-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-03496-for-student-and-Password123-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="login test for different value › Login test for incorrectUser and Password123" classname="csvparamstesting.spec.ts" time="6.45">
+<system-out>
+<![CDATA[this login is invalid username
+Error message for invalid username: Your username is invalid!
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-efb02-correctUser-and-Password123-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-efb02-correctUser-and-Password123-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="login test for different value › Login test for student and incorrectPassword" classname="csvparamstesting.spec.ts" time="7.146">
+<system-out>
+<![CDATA[this login is invalid password
+Error message for invalid password: Your password is invalid!
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-39551-udent-and-incorrectPassword-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\csvparamstesting-login-tes-39551-udent-and-incorrectPassword-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

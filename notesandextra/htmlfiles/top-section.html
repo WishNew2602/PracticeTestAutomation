@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top Section - Nested Frame</title>
+<style>
+  body {
+    margin: 0;
+    padding: 15px;
+    background-color: #e8f4f8;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    border: 2px solid #0066cc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  h3 {
+    color: #0066cc;
+    margin-top: 0;
+  }
+  button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+  }
+  button:hover {
+    background-color: #004fa3;
+  }
+  input {
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h3>Nested Frame: Top Section</h3>
+    <p>This is the TOP NESTED FRAME inside the main frame.</p>
+    
+    <label for="topinput">Enter text:</label><br>
+    <input type="text" id="topinput" placeholder="Type something...">
+    
+    <br><br>
+    <button id="topbutton" onclick="alert('Top Section Button Clicked!')">Click Top Button</button>
+    <button id="topbutton2" onclick="document.getElementById('topoutput').innerText = 'Top section output updated!'">Update Output</button>
+    
+    <p id="topoutput" style="color: #0066cc; font-weight: bold;">This text will change...</p>
+  </div>
+</body>
+</html>
