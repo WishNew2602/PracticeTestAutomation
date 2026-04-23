@@ -2,6 +2,14 @@ import {test, expect} from '@playwright/test';
 
 test.skip('Search a product', async({page}) => {
 
+
+        test('different click actions', async({page}) => {
+    await page.goto('https://www.tutorialspoint.com/selenium/practice/buttons.php');
+    await page.locator("//button[@onclick='showDiv()']").click();
+    await page.getByText('Right Click Me').click({button:'right'});
+    await page.locator("//button[@ondblclick='myDoubleclick()']").dblclick();
+    await expect(page.locator('//button[@onclick="showDiv()"]')).toHaveText('Click Me');
+});
     const searchTerm = 'Iphone';
     console.log(searchTerm);
     await page.goto('https://amazon.com/');
@@ -13,5 +21,6 @@ test.skip('Search a product', async({page}) => {
     // await page.locator('.nav-search-field > input[id="twotabsearchtextbox"]').clear()
     // await page.locator('.nav-search-field > input[id="twotabsearchtextbox"]').press('Enter');
     // await page.getByText('Sell').click();
+
 
 })
