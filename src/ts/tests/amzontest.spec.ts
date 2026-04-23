@@ -10,6 +10,23 @@ test.skip('Search a product', async({page}) => {
     await page.locator("//button[@ondblclick='myDoubleclick()']").dblclick();
     await expect(page.locator('//button[@onclick="showDiv()"]')).toHaveText('Click Me');
 });
+
+    test.beforeEach('before each', async({page}) =>{
+    console.log('before each');
+    page.on('dialog', async dialog => {
+        console.log(dialog.message());
+        console.log(dialog.type());
+        if(dialog.type() === 'prompt'){
+            await dialog.accept('Vishnu');
+        }
+        if(dialog.type() === 'alert'){
+            await dialog.accept();
+        }
+        if(dialog.type() === 'confirm'){
+            await dialog.dismiss();
+        }
+    }); //event defination for dialog   
+});
     const searchTerm = 'Iphone';
     console.log(searchTerm);
     await page.goto('https://amazon.com/');
