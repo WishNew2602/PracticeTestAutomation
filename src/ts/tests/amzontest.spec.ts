@@ -2,6 +2,15 @@ import {test, expect} from '@playwright/test';
 
 test.skip('Search a product', async({page}) => {
 
+
+        test('different click actions', async({page}) => {
+    await page.goto('https://www.tutorialspoint.com/selenium/practice/buttons.php');
+    await page.locator("//button[@onclick='showDiv()']").click();
+    await page.getByText('Right Click Me').click({button:'right'});
+    await page.locator("//button[@ondblclick='myDoubleclick()']").dblclick();
+    await expect(page.locator('//button[@onclick="showDiv()"]')).toHaveText('Click Me');
+});
+
     test.beforeEach('before each', async({page}) =>{
     console.log('before each');
     page.on('dialog', async dialog => {
@@ -29,13 +38,6 @@ test.skip('Search a product', async({page}) => {
     // await page.locator('.nav-search-field > input[id="twotabsearchtextbox"]').clear()
     // await page.locator('.nav-search-field > input[id="twotabsearchtextbox"]').press('Enter');
     // await page.getByText('Sell').click();
-    test('different util methods', async({page}) => {
-        await page.goto('https://www.tutorialspoint.com/selenium/practice/register.php');
-        // await page.getByPlaceholder('First Name').fill(TestDataUtil.getFirstName());
-        // await page.getByPlaceholder('lastname').fill(TestDataUtil.getLastName());
-        // await page.getByPlaceholder('UserName').fill(TestDataUtil.getUsername());
-        // await page.getByPlaceholder('Password').fill('Password123');
-    });
 
 
 })
